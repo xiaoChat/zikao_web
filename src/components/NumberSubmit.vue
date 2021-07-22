@@ -1,29 +1,31 @@
 <template>
   <input v-model="number" type="number" class="input" />
-  <button @tap="addNumber">
-    Add new sdfasasdf
-  </button>
+  <AtButton @tap="addNumber" type="primary" >Add new Data</AtButton>
 </template>
 
-<script>
-import { ref } from 'vue'
-import { useStore } from 'vuex'
+<script lang="ts">
+import { ref } from "vue";
+import { useStore } from "vuex";
+import mutations from '../store/mutations';
+// import Taro from "@tarojs/taro";
 
 export default {
-  setup () {
-    const store = useStore()
-    const number = ref(0)
+  setup() {
+    const store = useStore();
+    const number = ref(0);
 
     function addNumber() {
-      store.dispatch('addNumber', Number(number.value))
+      console.log(number.value);
+
+      store.dispatch(mutations.addNumber.name, Number(number.value));
     }
 
     return {
       number,
-      addNumber
-    }
-  }
-}
+      addNumber,
+    };
+  },
+};
 </script>
 
 <style>

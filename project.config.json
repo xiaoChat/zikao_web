@@ -1,7 +1,7 @@
 {
   "miniprogramRoot": "dist/",
-  "projectname": "zikao_web",
-  "description": "zikao_web",
+  "projectname": "自考妹妹",
+  "description": "广东自考妹妹",
   "appid": "wx001ac5e03313aa3c",
   "setting": {
     "urlCheck": true,
@@ -39,5 +39,6 @@
     "showES6CompileOption": false
   },
   "compileType": "miniprogram",
+  "libVersion": "2.18.0",
   "condition": {}
 }

@@ -1,5 +1,5 @@
 const config = {
-  projectName: 'zikao_web',
+  projectName: '自考妹妹',
   date: '2021-7-21',
   designWidth: 750,
   deviceRatio: {
